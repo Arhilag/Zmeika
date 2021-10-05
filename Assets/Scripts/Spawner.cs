@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private float time;
-    [SerializeField] private GameObject prefab;
-    private int zcore = 5;
+    [SerializeField] private float _time;
+    [SerializeField] private GameObject _prefab;
+    private int _zcore = 5;
+    private int _maxPanel = 42;
 
     void Start()
     {
-        for(int i = 0; i < 42; i++)
+        for(int i = 0; i < _maxPanel; i++)
         {
-            zcore += 15;
-            var obj = Instantiate(prefab, new Vector3(0, -0.5f, zcore), transform.rotation);
+            _zcore += 15;
+            var obj = Instantiate(_prefab, new Vector3(0, -0.5f, _zcore), transform.rotation);
             if (i < 3 || (i > 3 && i < 14))
             {
                 obj.GetComponent<Plane>().Variants(0,0);

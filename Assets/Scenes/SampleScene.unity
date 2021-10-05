@@ -245,8 +245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61daadd8dd4f27e48bf2f4eaedde5a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 1.2
-  prefab: {fileID: 2503014916338889044, guid: 4c7fee0206dce4e4fbfa248c74c553bf, type: 3}
+  _time: 0
+  _prefab: {fileID: 0}
 --- !u!4 &739628884
 Transform:
   m_ObjectHideFlags: 0
@@ -509,16 +509,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23cb796b40d7be4ebb860b7183f68b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.3
+  _speed: 0
   _tails:
   - {fileID: 1717965772}
   - {fileID: 1356532794}
   _bonesDistance: 1.1
   _bonePrefab: {fileID: 0}
-  traceCamera: {fileID: 963194225}
-  humansText: {fileID: 1916787128}
-  cristalsText: {fileID: 1436366081}
-  restart: {fileID: 1347852613}
+  _traceCamera: {fileID: 0}
+  _humansText: {fileID: 0}
+  _cristalsText: {fileID: 0}
+  _restart: {fileID: 0}
 --- !u!1 &1347852613
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b55fbb7964247bc45baebd0b3383db4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1717965772}
+  _target: {fileID: 1717965772}
 --- !u!65 &1356532796
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -988,7 +988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b55fbb7964247bc45baebd0b3383db4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 987949916}
+  _target: {fileID: 987949916}
 --- !u!65 &1717965774
 BoxCollider:
   m_ObjectHideFlags: 0
